@@ -31,3 +31,17 @@ is as follows:
 teamidx=baseball['team'].isin(['LAN', 'SFN'])
 baseball[teamidx]
 ```
+
+Ex4
+---
+First, we have to define a function which implements the given formula for the base percentage.
+Then, we apply this function on the series followed by sorting the serie based on this value.
+
+```python
+def base_percentage(x) :
+   a = x['h'] + x['bb'] + x['hbp']
+   b = x['ab'] + x['bb'] + x['hbp'] + x['sf'] + 1e-6
+   return a/b
+
+baseball.apply(base_percentage, axis=1).round(3).sort_values()
+```
