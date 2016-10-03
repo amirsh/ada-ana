@@ -61,3 +61,13 @@ We have to set the `axis` parameter of the `dropna` method.
 ```python
 data.dropna(axis=1)
 ```
+
+Ex5.5
+---
+The `corr` method returns the covariance matrix of the given DataFrame.
+```python
+baseball.corr()
+```
+
+Advanced Exercise
+---
