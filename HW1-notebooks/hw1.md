@@ -150,3 +150,7 @@ allidx = allna.set_index(idx_cols)
 from IPython.display import HTML
 HTML(allidx.to_html())
 ```
+
+Ex 7 & 8
+----
+Written in the notebook file!
