@@ -71,3 +71,76 @@ baseball.corr()
 
 Advanced Exercise
 ---
+First of all, we have to provide a facility for reading a DataFrame from CSV files in a particular folder.
+This is done in the `getCSVData` method.
+
+Then, for the produced DataFrame corresponding to a country, we have to extract the information about the new cases and the deaths.
+To do so, we provide the method `getDF` which gets as input the following parameters. The first
+parameter specifies the name of the folder that we are reading the CSV files from.
+The next 3 parameters specify the name of the columns for the description (or variable in the case of some countries) ,
+date, and the total national number. The reason for passing them as parameters is because of the different titles associated with them
+across the files of different countries. The next parameter specifies the name of the country to be stored in the produced
+data frame. Finally, the last two parameters are functions which specify whether the description corresponds to a new case and new death respectively.
+
+For each of the countries we have defined functions which specify whether a description corresponds to a new case or new death.
+
+Then, the `getDF` function is invoked for each of the countries using an appropriate folder name, column names, and functions for checking their status.
+
+All these data frames are concatenated as the next step. 
+
+Then, the rows that have missing values are dropped.
+
+Finally, a hierarchical index is created using the country, status, and date columns.
+
+```python
+import glob
+import os
+data_path = r'Data/ebola'
+def getCSVData(folder):  
+    folder = glob.glob(os.path.join(data_path, folder))
+    for f in folder:
+        all_files = glob.glob(os.path.join(f, "*.csv"))
+    all_data=[]
+    for file in all_files:
+       all_data.append(pd.read_csv(file))
+    big_data = pd.concat(all_data)
+    return big_data
+def isNewCaseG(name):
+   ln = name.lower()
+   return "new" in ln and "confirm" in ln and "death" not in ln and "among" not in ln
+def isDeathG(name):
+   ln = name.lower()
+   return "new" in ln and "register" in ln and "death" in ln and "among" not in ln and "(" not in ln
+def isNewCaseL(name):
+   ln = name.lower()
+   return "new" in ln and "confirm" in ln and "death" not in ln and "case" in ln
+def isDeathL(name):
+   ln = name.lower()
+   return "new" in ln and "reported" in ln and "deaths" in ln and "hcw" not in ln
+def isNewCaseS(name):
+   return name == "new_confirmed"
+def isDeathS(name):
+   return name == "death_confirmed"
+def getDF(folder, descCol, dateCol, totalsCol, cntryName, isNewCase, isDeath):
+    big_data = getCSVData(folder)
+    deathidx = [isDeath(name) for name in big_data[descCol]]
+    death_data = big_data[deathidx]
+    death_data[descCol] = "Death"
+    newcaseidx = [isNewCase(name) for name in big_data[descCol]]
+    new_data = big_data[newcaseidx]
+    new_data[descCol] = "New"
+    new_death = pd.concat([death_data, new_data])
+    pnd = new_death[[dateCol, descCol, totalsCol]]
+    pnd["Country"] = cntryName
+    pnd.columns = ["Date", "Status", "Totals", "Country"]
+    return pnd
+g = getDF("guinea_data", 'Description', 'Date', 'Totals', 'Guinea', isNewCaseG, isDeathG)
+l = getDF("liberia_data", 'Variable', 'Date', 'National', 'Liberia', isNewCaseL, isDeathL)
+s = getDF("sl_data", 'variable', 'date', 'National', 'Sl', isNewCaseS, isDeathS)
+all = pd.concat([g, l, s])
+allna = all.dropna()
+idx_cols = ["Country", "Status", "Date"]
+allidx = allna.set_index(idx_cols)
+from IPython.display import HTML
+HTML(allidx.to_html())
+```
