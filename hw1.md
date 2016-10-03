@@ -57,4 +57,7 @@ frame.loc[('b', 2), 'Colorado']
 
 Ex5
 ---
-
+We have to set the `axis` parameter of the `dropna` method.
+```python
+data.dropna(axis=1)
+```
