@@ -13,8 +13,10 @@ In this case it is `(8, 3)`.
 
 Ex2
 ---
+The required index is the conjunction of two indices: 1. The index for the elements which 
+their name ends with 'bacteria', 2. The index for the elements which have a value of more
+than 1000.
 ```python
-ex2 = data[[name.endswith('bacteria') for name in data.phylum] and 
-              [v>1000 for v in data.value]]
-ex2
+idx = [name.endswith('bacteria') for name in data.phylum] and [v>1000 for v in data.value]
+data[idx]
 ```
