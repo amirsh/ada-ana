@@ -20,3 +20,14 @@ than 1000.
 idx = [name.endswith('bacteria') for name in data.phylum] and [v>1000 for v in data.value]
 data[idx]
 ```
+
+Ex3
+---
+We first use the `isin` method to construct the index for the given condition. Then, we use
+this index in order to retrieve the satisfying players which are 15. The corresponding code
+is as follows:
+
+```python
+teamidx=baseball['team'].isin(['LAN', 'SFN'])
+baseball[teamidx]
+```
