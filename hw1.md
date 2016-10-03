@@ -82,6 +82,12 @@ date, and the total national number. The reason for passing them as parameters i
 across the files of different countries. The next parameter specifies the name of the country to be stored in the produced
 data frame. Finally, the last two parameters are functions which specify whether the description corresponds to a new case and new death respectively.
 
+In the `getDF` method, first we use the `getCSVData` to get the DataFrame out of the CSV files in the corresponding folder of a particular 
+country. Then, we filter the death cases and new cases rows based on the input functions. Then we substitute their values by either 
+"Death" or "New" for consistency across different country formats. Afterwards, we concatenate the rows of death and new cases and
+we project over the description, date, and status fields. Then, we add a country field which has the passed country name parameter as 
+its value. Finally, we rename the columns to proper names.
+
 For each of the countries we have defined functions which specify whether a description corresponds to a new case or new death.
 
 Then, the `getDF` function is invoked for each of the countries using an appropriate folder name, column names, and functions for checking their status.
