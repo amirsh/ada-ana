@@ -13,3 +13,8 @@ In this case it is `(8, 3)`.
 
 Ex2
 ---
+```python
+ex2 = data[[name.endswith('bacteria') for name in data.phylum] and 
+              [v>1000 for v in data.value]]
+ex2
+```
