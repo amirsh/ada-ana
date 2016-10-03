@@ -45,3 +45,16 @@ def base_percentage(x) :
 
 baseball.apply(base_percentage, axis=1).round(3).sort_values()
 ```
+
+Ex4.5
+---
+For `b2` we have to construct the tuple `('b', 2)` and for `'Colorado'` we have to put itself
+as the input to `loc`.
+
+```python
+frame.loc[('b', 2), 'Colorado']
+```
+
+Ex5
+---
+
