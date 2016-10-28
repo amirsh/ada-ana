@@ -1,70 +1,70 @@
-University,Lang
-Zürcher Fachhochschule (ohne PH) - ZFH,de
-Forschungsanstalten Agroscope - AGS,de
-ETH Zürich - ETHZ,fr
-Universität Zürich - ZH,de
-"Eidg. Forschungsanstalt für Wald,Schnee,Land - WSL",de
-Eidg. Anstalt für Wasserversorgung - EAWAG,de
-Interkant. Hochschule für Heilpädagogik ZH - HfH,de
-Pädagogische Hochschule Zürich - PHZFH,de
-Fachhochschule Kalaidos - FHKD,de
-Schweiz. Institut für Kunstwissenschaft - SIK-ISEA,de
-Universität Luzern - LU,de
-Hochschule Luzern - HSLU,de
-Pädagogische Hochschule Luzern - PHLU,de
-Schweizer Paraplegiker Forschung - SPF,de
-Pädagogische Hochschule Schwyz - PHSZ,de
-Pädagogische Hochschule Zug - PHZG,de
-Fachhochschule Nordwestschweiz (ohne PH) - FHNW,de
-Pädagogische Hochschule Nordwestschweiz - PHFHNW,de
-Weitere Institute - FINST,fr
-Staatsunabh. Theologische Hochschule Basel - STHB,de
-Universität Basel - BS,de
-Friedrich Miescher Institute - FMI,de
-Pädagogische Hochschule Schaffhausen - PHSH,de
-Fachhochschule Ostschweiz - FHO,de
-Eidg. Material und Prüfungsanstalt - EMPA,de
-Kantonsspital St. Gallen - KSPSG,de
-Universität St. Gallen - SG,de
-Pädagogische Hochschule St. Gallen - PHSG,de
-Schweiz. Hochschule für Logopädie Rorschach - SHLR,de
-Paul Scherrer Institut - PSI,fr
-Forschungsinstitut für biologischen Landbau - FIBL,de
-Pädagogische Hochschule Thurgau - PHTG,de
-Biotechnologie Institut Thurgau - BITG,fr
-Pädag. Hochschule Tessin (Teilschule SUPSI) - ASP,de
-Università della Svizzera italiana - USI,it
-SUP della Svizzera italiana - SUPSI,it
-Ente Ospedaliero Cantonale - EOC,it
-Franklin University Switzerland - FUS,de
-Facoltà di Teologia di Lugano - FTL,it
-Instituto Ricerche Solari Locarno - IRSOL,it
-Swiss Institute of Bioinformatics - SIB,en
-Schweizer Kompetenzzentrum Sozialwissensch. - FORS,de
-Université de Lausanne - LA,fr
-EPF Lausanne - EPFL,de
-Inst. universit. romand de Santé au Travail - IST,fr
-Haute école pédagogique du canton de Vaud - HEPL,fr
-Université de Neuchâtel - NE,fr
-Inst. Suisse de Spéléologie et Karstologie - ISSKA,fr
-Swiss Center for Electronics and Microtech. - CSEM,en
-Inst. de Hautes Etudes Internat. et du Dév - IHEID,fr
-Université de Genève - GE,fr
-HES de Suisse occidentale - HES-SO,fr
-"Haute école pédagogique BE, JU, NE - HEPBEJUNE",fr
-Universität Bern - BE,de
-Berner Fachhochschule - BFH,de
-Pädagogische Hochschule Bern - PHBern,de
-Eidg. Hochschulinstitut für Berufsbildung - EHB,de
-Université de Fribourg - FR,fr
-Haute école pédagogique fribourgeoise - HEPFR,fr
-Physikal.-Meteorolog. Observatorium Davos - PMOD,de
-AO Research Institute - AORI,de
-Allergie- und Asthmaforschung - SIAF,de
-Institut für Kulturforschung Graubünden - IKG,de
-Pädagogische Hochschule Graubünden - PHGR,de
-Pädagogische Hochschule Wallis - PHVS,de
-Centre de rech. sur l'environnement alpin - CREALP,fr
-Idiap Research Institute - IDIAP,fr
-Forschungsinstitut für Opthalmologie - IRO,de
-Institut Universitaire Kurt Bösch - IUKB,de
+Canton,Lang,University
+BE,de,Universität Bern - BE
+BE,de,Berner Fachhochschule - BFH
+BE,de,Pädagogische Hochschule Bern - PHBern
+BE,de,Eidg. Hochschulinstitut für Berufsbildung - EHB
+FR,fr,Université de Fribourg - FR
+FR,fr,Haute école pédagogique fribourgeoise - HEPFR
+GR,de,Physikal.-Meteorolog. Observatorium Davos - PMOD
+GR,de,AO Research Institute - AORI
+GR,de,Allergie- und Asthmaforschung - SIAF
+GR,de,Institut für Kulturforschung Graubünden - IKG
+GR,de,Pädagogische Hochschule Graubünden - PHGR
+VS,de,Pädagogische Hochschule Wallis - PHVS
+VS,fr,Centre de rech. sur l'environnement alpin - CREALP
+VS,fr,Idiap Research Institute - IDIAP
+VS,de,Forschungsinstitut für Opthalmologie - IRO
+VS,de,Institut Universitaire Kurt Bösch - IUKB
+ZH,de,Zürcher Fachhochschule (ohne PH) - ZFH
+ZH,de,Forschungsanstalten Agroscope - AGS
+ZH,de,ETH Zürich - ETHZ
+ZH,de,Universität Zürich - ZH
+ZH,de,"Eidg. Forschungsanstalt für Wald,Schnee,Land - WSL"
+ZH,de,Eidg. Anstalt für Wasserversorgung - EAWAG
+ZH,de,Interkant. Hochschule für Heilpädagogik ZH - HfH
+ZH,de,Pädagogische Hochschule Zürich - PHZFH
+ZH,de,Fachhochschule Kalaidos - FHKD
+ZH,de,Schweiz. Institut für Kunstwissenschaft - SIK-ISEA
+VD,fr,Swiss Institute of Bioinformatics - SIB
+VD,fr,Schweizer Kompetenzzentrum Sozialwissensch. - FORS
+VD,fr,Université de Lausanne - LA
+VD,fr,EPF Lausanne - EPFL
+VD,fr,Inst. universit. romand de Santé au Travail - IST
+VD,fr,Haute école pédagogique du canton de Vaud - HEPL
+BS,de,Weitere Institute - FINST
+BS,de,Staatsunabh. Theologische Hochschule Basel - STHB
+BS,de,Universität Basel - BS
+BS,de,Friedrich Miescher Institute - FMI
+TI,it,Pädag. Hochschule Tessin (Teilschule SUPSI) - ASP
+TI,it,Università della Svizzera italiana - USI
+TI,it,SUP della Svizzera italiana - SUPSI
+TI,it,Ente Ospedaliero Cantonale - EOC
+TI,it,Franklin University Switzerland - FUS
+TI,it,Facoltà di Teologia di Lugano - FTL
+TI,it,Instituto Ricerche Solari Locarno - IRSOL
+GE,fr,Inst. de Hautes Etudes Internat. et du Dév - IHEID
+GE,fr,Université de Genève - GE
+NE,fr,Université de Neuchâtel - NE
+NE,fr,Inst. Suisse de Spéléologie et Karstologie - ISSKA
+NE,fr,Swiss Center for Electronics and Microtech. - CSEM
+AG,de,Paul Scherrer Institut - PSI
+AG,de,Forschungsinstitut für biologischen Landbau - FIBL
+LU,de,Universität Luzern - LU
+LU,de,Hochschule Luzern - HSLU
+LU,de,Pädagogische Hochschule Luzern - PHLU
+LU,de,Schweizer Paraplegiker Forschung - SPF
+JU,fr,HES de Suisse occidentale - HES-SO
+JU,fr,"Haute école pédagogique BE, JU, NE - HEPBEJUNE"
+SO,de,Fachhochschule Nordwestschweiz (ohne PH) - FHNW
+SO,de,Pädagogische Hochschule Nordwestschweiz - PHFHNW
+SG,de,Fachhochschule Ostschweiz - FHO
+SG,de,Eidg. Material und Prüfungsanstalt - EMPA
+SG,de,Kantonsspital St. Gallen - KSPSG
+SG,de,Universität St. Gallen - SG
+SG,de,Pädagogische Hochschule St. Gallen - PHSG
+SG,de,Schweiz. Hochschule für Logopädie Rorschach - SHLR
+SZ,de,Pädagogische Hochschule Schwyz - PHSZ
+TG,de,Pädagogische Hochschule Thurgau - PHTG
+TG,de,Biotechnologie Institut Thurgau - BITG
+ZG,de,Pädagogische Hochschule Zug - PHZG
+SH,de,Pädagogische Hochschule Schaffhausen - PHSH
